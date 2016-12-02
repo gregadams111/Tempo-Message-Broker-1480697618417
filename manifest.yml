@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: Tempo Message Broker
+  host: Tempo-Message-Broker
+  disk_quota: 1024M
+  services:
+  - Tempo Message Broker Cloudant
+  env:
+    NODE_RED_USERNAME: admin
+    NODE_RED_PASSWORD: rocknroll
